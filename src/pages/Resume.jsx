@@ -1,4 +1,4 @@
-function Resume() {
+export default function Resume() {
   return (
     <div className="columns">
       <div className="column">

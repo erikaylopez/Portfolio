@@ -1,3 +1,5 @@
+import erikaPDF from "./Erika-Lopez-Resume.pdf";
+
 export default function Resume() {
   return (
     <div className="columns">
@@ -7,8 +9,10 @@ export default function Resume() {
 
         <a
           className="button is-primary"
-          href={process.env.PUBLIC_URL + "/assets/erika-lopez-resume.pdf"}
-          target="_blank" rel="noreferrer"
+          href={erikaPDF}
+          download="Erika"
+          target="_blank" 
+          rel="noreferrer"
         >
           <span className="icon">
             <i className="fas fa-download"></i>

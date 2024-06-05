@@ -1,5 +1,5 @@
 export default function Portfolio() {
-    const projects = useState([
+const projects = [ 
         {
             title: 'Weather Dashnboard',
             description: 'Weather application to include a search function for any location. Includes 5 day forecast',
@@ -27,7 +27,7 @@ export default function Portfolio() {
         }
 
 
-    ]);
+    ];
 
 
     return (

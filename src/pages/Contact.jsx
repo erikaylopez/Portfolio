@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 //import { useForm } from 'react-hook-form';
@@ -8,21 +7,28 @@ import { validateEmail } from '../utils/helpers';
 
 export default function Contact() {
 
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    
+   
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!errorMessage) {
+            alert("message sent!!!!!!")
             setFormState({ name: '', email: '', message: '' });
         };
     };
 
     const handleChange = (e) => {
+        console.log(e.target.name)
+
         if (e.target.name === 'email') {
+
             const isValid = validateEmail(e.target.value);
+
             if (!isValid) {
                 setErrorMessage('Your email is invalid.');
             } else {
@@ -48,7 +54,7 @@ export default function Contact() {
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div className="field">
                     <label className="label" htmlFor="name">Name</label>
-                    <input className="input" type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                    <input className="input" type="text" name="name" defaultValue={name} onBlur={handleChange} id="hello"/>
                 </div>
                 <div className="field">
                     <label className="label" htmlFor="email">Email Address</label>

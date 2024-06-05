@@ -36,7 +36,11 @@ For additional questions or concerns regarding the README file, contact:
 Github: erikaylopez
 Email: eylopez8686@gmail.com
 
+
 # Live Demo 
 
+[Live Demo](https://velvety-choux-8e7beb.netlify.app/#portfolio)
 
 # Screenshot 
+
+![Screenshot](src/assets/netlify.jpeg)

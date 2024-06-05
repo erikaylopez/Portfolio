@@ -6,7 +6,7 @@ function App() {
     <>
       <Nav />
       <main className="mx-3">
-        <Outlet /> // Outlet is a component that will render the appropriate child route component
+        <Outlet /> 
       </main>
     </>
   );

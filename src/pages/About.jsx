@@ -1,4 +1,4 @@
-import headshot from '../assets/images/IMG_2794.jpg';
+import headshot from '../assets/Erika.jpg';
 
 export default function About() {
         return (
